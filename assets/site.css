@@ -198,16 +198,16 @@ h1 em,h2 em{font-style:normal;color:var(--cyan)}
 
 /* Covers V3 */
 .art:has(> .art-core){background-repeat:no-repeat}.art:has(> .art-core) .art-core,.art:has(> .art-core) .art-line,.art:has(> .art-core) .art-caption{display:none!important}.art:has(> .art-core)::before,.art:has(> .art-core)::after{display:none!important}
-.art-studio{background-image:url("/assets/covers/rass-studio.webp")!important;background-size:cover!important;background-position:center!important}
-.art-bakery{background-image:url("/assets/covers/padoka-da-villa.webp")!important;background-size:cover!important;background-position:center!important}
+.art-studio{background-image:url("/assets/covers/rass-studio-960.webp")!important;background-size:cover!important;background-position:center!important}
+.art-bakery{background-image:url("/assets/covers/padoka-da-villa-960.webp")!important;background-size:cover!important;background-position:center!important}
 
-.art-films{background-image:url("/assets/covers/stoski-films.webp")!important;background-size:cover!important;background-position:center!important}
-.art-kids{background-image:url("/assets/covers/mundo-kids.webp")!important;background-size:cover!important;background-position:center!important}
-.art-halloween{background-image:url("/assets/covers/halloween-run.webp")!important;background-size:cover!important;background-position:center!important}
+.art-films{background-image:url("/assets/covers/stoski-films-960.webp")!important;background-size:cover!important;background-position:center!important}
+.art-kids{background-image:url("/assets/covers/mundo-kids-960.webp")!important;background-size:cover!important;background-position:center!important}
+.art-halloween{background-image:url("/assets/covers/halloween-run-960.webp")!important;background-size:cover!important;background-position:center!important}
 
-.art-football{background-image:url("/assets/covers/italo-efootball.webp")!important;background-size:cover!important;background-position:center!important}
-.art-auto{background-image:url("/assets/covers/gestao-automotiva.webp")!important;background-size:cover!important;background-position:center!important}
-.art-infotech{background-image:url("/assets/covers/infotech-io.webp")!important;background-size:cover!important;background-position:center!important}
+.art-football{background-image:url("/assets/covers/italo-efootball-960.webp")!important;background-size:cover!important;background-position:center!important}
+.art-auto{background-image:url("/assets/covers/gestao-automotiva-960.webp")!important;background-size:cover!important;background-position:center!important}
+.art-infotech{background-image:url("/assets/covers/infotech-io-960.webp")!important;background-size:cover!important;background-position:center!important}
 
 /* PORTFOLIO HQ 1916x821 */
 .art,.art-large,.catalog-grid .art,.home-cards .art,.home-cards .work-card .art{height:auto!important;min-height:0!important;aspect-ratio:1916/821;background-size:contain!important;background-repeat:no-repeat!important;background-position:center!important;background-color:#080d18!important}
@@ -586,7 +586,8 @@ h1,h2,h3{letter-spacing:-.049em}
 }
 @media(max-width:760px){
  .header-inner{height:70px}
- .main-nav{top:70px;background:#0b182bee}
+ body.menu-open{overflow:hidden}
+ .main-nav{top:70px;background:#0b182b;box-shadow:0 20px 45px #000b}
  .main-nav>a:not(.nav-special){padding:14px 9px}
  .main-nav>a:not(.nav-special)::after{bottom:6px}
  .main-nav .nav-special{display:flex;margin:17px 0 0;min-height:50px}
