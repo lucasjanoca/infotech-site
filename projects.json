@@ -77,8 +77,8 @@
     ],
     "status": "Publicado",
     "stage": "Projeto real",
-    "demo": "https://lucasjanoca.github.io/stoski2026/",
-    "repo": "https://github.com/lucasjanoca/stoski2026",
+    "demo": "https://lucasjanoca.github.io/stoski-films/",
+    "repo": "https://github.com/lucasjanoca/stoski-films",
     "theme": "films",
     "featured": true,
     "model": "Portfólio com vídeos e orçamento"
@@ -159,8 +159,8 @@
     ],
     "status": "Publicado",
     "stage": "Projeto público",
-    "demo": "https://lucasjanoca.github.io/Italo-eFootball/",
-    "repo": "https://github.com/lucasjanoca/Italo-eFootball",
+    "demo": "https://lucasjanoca.github.io/italo-efootball/",
+    "repo": "https://github.com/lucasjanoca/italo-efootball",
     "theme": "football",
     "model": "Conteúdo, cursos e comunidade"
   },
@@ -187,7 +187,7 @@
     "status": "Em evolução",
     "stage": "Acesso controlado",
     "demo": "",
-    "repo": "https://github.com/lucasjanoca/Sistema-De-Est-tica-",
+    "repo": "https://github.com/lucasjanoca/gestao-estetica-automotiva",
     "theme": "auto",
     "model": "Sistema de gestão sob medida"
   },
@@ -214,7 +214,7 @@
     "status": "Publicado",
     "stage": "Vitrine oficial",
     "demo": "https://infotech-io.com.br/",
-    "repo": "https://github.com/lucasjanoca/InfoTech.io",
+    "repo": "https://github.com/lucasjanoca/infotech-site",
     "theme": "infotech",
     "model": "Site institucional e portfólio"
   }
