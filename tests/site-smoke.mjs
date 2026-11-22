@@ -22,6 +22,7 @@ assert.match(home, /class="trust-rail/);
 assert.match(home, /class="outcome-grid/);
 assert.match(home, /class="case-proof-grid/);
 assert.match(home, /class="path-grid/);
+assert.equal((home.match(/class="path-image"/g) || []).length, 4, 'As quatro opções devem exibir uma imagem coerente.');
 assert.match(home, /class="process-flow/);
 assert.match(home, /class="home-faq/);
 
@@ -64,7 +65,7 @@ assert.match(home, /"@type": "FAQPage"/);
 
 const js = readFileSync(join(root, 'assets/site.js'), 'utf8');
 assert.match(js, /params\.get\('objetivo'\)/, 'O contato deve aceitar objetivo pré-selecionado.');
-assert.match(home, /site\.css\?v=9\.5\.2/);
+assert.match(home, /site\.css\?v=9\.5\.3/);
 assert.match(contact, /site\.js\?v=8\.1\.1/);
 
 console.log('Site smoke: OK');
