@@ -60,6 +60,7 @@ for (const file of htmlFiles) {
 const expectedDestinations = new Map([
   ['stoski-films', 'https://lucasjanoca.github.io/stoski-films/'],
   ['italo-efootball', 'https://lucasjanoca.github.io/italo-efootball/'],
+  ['empilhadores', 'https://lucasjanoca.github.io/Sistema-De-Empilhamento-e-Checklist/empilhadores/'],
 ]);
 for (const [id, demo] of expectedDestinations) {
   assert.equal(projects.find((project) => project.id === id)?.demo, demo, `Destino publicado incorreto para ${id}.`);

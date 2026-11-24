@@ -192,6 +192,33 @@
     "model": "Sistema de gestão sob medida"
   },
   {
+    "id": "empilhadores",
+    "name": "Sistema de Empilhadores",
+    "category": "Sistemas",
+    "kicker": "LOGÍSTICA & OPERAÇÃO",
+    "headline": "Movimentação sob controle.",
+    "description": "Sistema corporativo para gestão de paletes, filas operacionais, equipamentos e checklists.",
+    "challenge": "Organizar filas, confirmações e retornos de paletes em uma operação que exige agilidade, rastreabilidade e acesso por perfil.",
+    "features": [
+      "Gestão de paletes e filas",
+      "Confirmação antes da movimentação",
+      "Checklist de equipamentos",
+      "Histórico e rastreabilidade"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Supabase"
+    ],
+    "status": "Demonstração",
+    "stage": "Integração corporativa pendente",
+    "demo": "https://lucasjanoca.github.io/Sistema-De-Empilhamento-e-Checklist/empilhadores/",
+    "repo": "https://github.com/lucasjanoca/Sistema-De-Empilhamento-e-Checklist",
+    "theme": "empilhadores",
+    "model": "Gestão de paletes e checklist"
+  },
+  {
     "id": "infotech-io",
     "name": "InfoTech.io",
     "category": "Sites",
