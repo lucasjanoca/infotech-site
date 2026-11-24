@@ -144,6 +144,7 @@ h1 em,h2 em{font-style:normal;color:var(--cyan)}
 .brief-panel .brief-notice{color:#879eaf;font-size:11px;line-height:1.6;border-top:1px solid #314863;padding-top:14px;margin-top:17px;margin-bottom:0}
 .crumb{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:11px;color:#a5bed8;letter-spacing:.05em;font-weight:900;padding:27px 0;border-bottom:1px solid #344f6e}.crumb a:hover{color:var(--acid)}
 .case-intro{display:grid;grid-template-columns:1fr 285px;gap:35px;align-items:end;padding:63px 0 38px}
+.case-intro>*{min-width:0}
 .case-intro h1{font-size:clamp(62px,8vw,110px);margin:22px 0 19px}.h1-period{color:var(--acid)}
 .case-desc{max-width:680px;color:#b9c9dc;font-size:18px;line-height:1.6;margin-bottom:0}
 .case-right{border-left:1px solid #38536f;padding-left:27px;display:grid;justify-items:start;gap:11px}
@@ -192,7 +193,7 @@ h1 em,h2 em{font-style:normal;color:var(--cyan)}
 .portfolio-help{grid-template-columns:1fr;gap:14px}.portfolio-help .text-link{grid-column:1/-1}.page-intro h1{font-size:clamp(45px,12vw,64px)}.split-label{align-items:flex-start}.small-counter{text-align:right}
 .brief-panel{padding:19px}.brief-panel h2{font-size:30px}.brief-actions{grid-template-columns:1fr}
 .story-graphic{height:260px}.story-graphic>span{font-size:83px}.contact-copy h1{font-size:clamp(48px,12vw,70px)}.contact-page{gap:25px}
-.case-intro h1{font-size:clamp(50px,12vw,66px)}.case-desc{font-size:16px}.case-body h2{font-size:clamp(31px,11vw,39px);overflow-wrap:anywhere}.case-actions-band h2{font-size:34px}.next-case a{font-size:19px}
+.case-intro h1{font-size:clamp(42px,12vw,66px);overflow-wrap:anywhere}.case-desc{font-size:16px}.case-body h2{font-size:clamp(31px,11vw,39px);overflow-wrap:anywhere}.case-actions-band h2{font-size:34px}.next-case a{font-size:19px}
 .footer-main{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.footer-last{display:block}.footer-last span{display:block;margin-top:8px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.work-card:hover,.button:hover{transform:none}}
