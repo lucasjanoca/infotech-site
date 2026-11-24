@@ -14,6 +14,7 @@ const files = [
 const html = new Map(files.map((file) => [file, readFileSync(join(root, file), 'utf8')]));
 const home = html.get('index.html');
 const contact = html.get('contato/index.html');
+const studio = html.get('estudio/index.html');
 const projects = JSON.parse(readFileSync(join(root, 'projects.json'), 'utf8'));
 
 assert.equal(projects.length, 9, 'A quantidade de projetos mudou; atualize a prova da home.');
@@ -31,6 +32,9 @@ assert.match(styles, /font-size:16px;min-height:52px/, 'Campos do formulário mo
 assert.equal((home.match(/class="path-image"/g) || []).length, 4, 'As quatro opções devem exibir uma imagem coerente.');
 assert.match(home, /class="process-flow/);
 assert.match(home, /class="home-faq/);
+assert.equal((studio.match(/class="st6-showcase-card/g) || []).length, 3, 'A página Estúdio deve mostrar três projetos reais na composição visual.');
+assert.doesNotMatch(studio, /conceito-ao-lancamento\.svg/, 'A ilustração genérica não deve continuar como imagem principal do Estúdio.');
+assert.match(studio, /PROVA VISUAL \/ PROJETOS REAIS/);
 
 for (const [file, source] of html) {
   assert.equal((source.match(/<h1\b/gi) || []).length, 1, `${file} deve ter exatamente um H1.`);
@@ -71,7 +75,7 @@ assert.match(home, /"@type": "FAQPage"/);
 
 const js = readFileSync(join(root, 'assets/site.js'), 'utf8');
 assert.match(js, /params\.get\('objetivo'\)/, 'O contato deve aceitar objetivo pré-selecionado.');
-assert.match(home, /site\.css\?v=10\.0\.3/);
+assert.match(home, /site\.css\?v=10\.0\.4/);
 assert.match(contact, /site\.js\?v=8\.1\.1/);
 
 console.log('Site smoke: OK');
