@@ -775,3 +775,118 @@ h1,h2,h3{letter-spacing:-.049em}
 @media(prefers-reduced-motion:reduce){
  .case-proof,.path-grid>a,.path-image img{transition:none}.case-proof:hover,.path-grid>a:hover{transform:none}.path-grid>a:hover .path-image img{transform:none}
 }
+
+/* InfoTech V10 — experiência mobile-first baseada em testes de toque e leitura */
+@media(max-width:760px){
+ html{scroll-padding-top:82px}
+ .wrap{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+ .top-signal{height:28px;font-size:10px;letter-spacing:.08em}
+ .header-inner{height:68px}
+ .main-nav{
+  top:68px;max-height:calc(100dvh - 68px);overflow-y:auto;overscroll-behavior:contain;
+  padding:14px 18px calc(22px + env(safe-area-inset-bottom));
+ }
+ .main-nav>a:not(.nav-special){min-height:52px;padding:15px 10px;font-size:15px;display:flex;align-items:center}
+ .main-nav .nav-special{min-height:52px;font-size:15px}
+ .menu-button{
+  position:relative;width:86px;height:48px;min-width:86px;min-height:48px;
+  padding:0 12px 0 40px;display:flex;align-items:center;justify-content:flex-end;
+  color:#e9f5ff;font-size:13px;font-weight:800;
+ }
+ .menu-button::after{content:"Menu"}
+ .menu-button[aria-expanded="true"]::after{content:"Fechar"}
+ .menu-button span{position:absolute;left:13px;top:16px;margin:0}
+ .menu-button span+span{top:24px;margin:0}
+ .brand{min-height:48px}
+ .micro{font-size:12px;line-height:1.45;letter-spacing:.1em}
+ .hero-standfirst,.home-v6 .hero-standfirst{font-size:16px;line-height:1.65}
+ .home-v6 .hero-confidence{font-size:13px;line-height:1.45;gap:10px 14px}
+ .hero-actions{gap:12px}
+ .hero-actions .button{font-size:15px;min-height:54px}
+ .text-link,.hero-actions .text-link,.section-lead .text-link{min-height:48px;padding:11px 0;font-size:14px}
+ .home6-caption{font-size:11px;line-height:1.4}.home6-caption strong{font-size:11px}
+ .home6-examples a>span{font-size:11px;line-height:1.4;min-height:44px}
+ .home6-label{font-size:10px;line-height:1.5}
+ .stripe-inner span{font-size:clamp(9px,2.75vw,13px)}
+ .trust-rail{margin-inline:18px;margin-bottom:60px}
+ .trust-rail strong{font-size:18px}.trust-rail span{font-size:14px;line-height:1.6}
+ .conversion-section,.featured-cases,.solution-paths,.home-process,.home-faq{padding-bottom:60px}
+ .conversion-heading,.section-lead{padding-top:22px;margin-bottom:22px}
+ .conversion-heading h2,.section-lead h2{font-size:clamp(33px,9vw,46px);line-height:1.06}
+ .conversion-heading p,.section-lead>p{font-size:15px;line-height:1.65}
+ .outcome-grid article{padding:20px}.outcome-grid h3{margin:30px 0 9px}.outcome-grid p{font-size:14px}
+ .case-proof>div{padding:19px}.case-proof span{font-size:11px}.case-proof p{font-size:14px;line-height:1.65}.case-proof strong{font-size:14px;min-height:48px}
+ .path-grid>a{padding:18px}.path-grid span{font-size:11px}.path-grid p{font-size:14px;line-height:1.6}
+ .process-flow li{padding:21px 18px}.process-flow p{font-size:14px;line-height:1.65}
+ .faq-intro p,.faq-list details p{font-size:15px}.faq-list summary{min-height:58px;font-size:18px;line-height:1.35}
+ .end-cta-conversion{padding:34px 0;gap:24px}.end-cta-conversion p{font-size:15px}.end-cta-actions>span{font-size:12px}
+ .page-intro{padding-top:44px;padding-bottom:40px}.page-intro p{font-size:16px;line-height:1.65}
+ .catalog-tools{display:block}.tab-filters{gap:8px;margin-bottom:14px}.tab{min-height:46px;padding:10px 13px;font-size:14px}
+ .search-input{width:100%;min-height:50px}.search-input input{width:100%;min-height:50px;font-size:16px}
+ .catalog-note{font-size:13px;line-height:1.55}.status-key{gap:10px 14px}
+ .portfolio-help p{font-size:15px}.portfolio-help .text-link{min-height:48px;font-size:14px}
+ .solution-main>p,.solution-links{font-size:15px}.solution-tags span,.case-tech span{font-size:13px}
+ .s4-intro p,.s4-card p,.s4-detail-intro p,.s4-facts p{font-size:15px}
+ .s4-links{gap:10px}.s4-action,.s4-example{min-height:48px;font-size:14px;display:inline-flex;align-items:center}
+ .s4-hint{font-size:13px;line-height:1.55}
+ .st5-intro p,.st5-story p,.st5-steps p{font-size:15px;line-height:1.65}
+ .contact-copy>p{font-size:16px;line-height:1.7}
+ .brief-panel{padding:22px 18px}.brief-panel>p,.brief-panel .brief-help{font-size:14px;line-height:1.6}
+ .brief-panel label{font-size:14px;line-height:1.4;margin-top:18px}
+ .brief-panel :is(input,select,textarea),.brief-panel input{font-size:16px;min-height:52px}
+ .brief-panel textarea{min-height:128px}
+ .brief-panel .brief-notice{font-size:13px}.brief-panel .whatsapp-primary{font-size:15px;min-height:60px}
+ .footer-links{justify-content:flex-start;gap:4px 10px;font-size:13px}
+ .footer-links a,.footer-last a{display:inline-flex;align-items:center;min-height:44px;padding:8px 4px}
+ .footer-last{font-size:12px;line-height:1.65;padding-bottom:calc(22px + env(safe-area-inset-bottom))}
+}
+
+@media(min-width:561px) and (max-width:760px){
+ .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+ .catalog-grid .work-card h3{font-size:17px}
+}
+
+@media(max-width:560px){
+ .home-v6 .hero-confidence{display:grid;grid-template-columns:1fr;gap:9px}
+ .path-grid>a{grid-template-columns:1fr;grid-template-areas:"label" "title" "visual" "description";gap:12px}
+ .path-image{width:100%}
+ .catalog-grid{grid-template-columns:1fr;gap:16px}
+ .catalog-grid .work-card{border-radius:12px}
+ .catalog-grid .work-card-info{display:block;min-height:0;padding:18px 18px 66px}
+ .catalog-grid .work-micro{display:flex;font-size:11px}
+ .catalog-grid .work-card h3{font-size:23px;line-height:1.2;margin:14px 0 8px}
+ .catalog-grid .work-card h3 a{min-height:44px}
+ .catalog-grid .work-card-info>p{display:block;padding:0;font-size:14px;line-height:1.6}
+ .catalog-grid .circle-link{
+  display:grid;width:48px;height:48px;place-items:center;right:16px;bottom:14px;
+  border:1px solid #4b7198;border-radius:50%;background:#132942;font-size:20px;
+ }
+ .portfolio-help{grid-template-columns:1fr;gap:15px}.portfolio-help .text-link{grid-column:auto}
+ .st5-steps{grid-template-columns:1fr;gap:10px}.st5-steps article{min-height:0;padding:19px}
+ .s4-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .s4-tabs button{min-height:54px;padding:9px 7px;font-size:12px}.s4-tabs button small{font-size:10px}
+}
+
+@media(max-width:430px){
+ .top-signal-inner{justify-content:flex-start}
+ .home6-examples{grid-template-columns:1fr}
+ .home6-caption,.home6-examples a>span{padding:11px 12px}
+ .hero-bottom{display:none}
+ .faq-intro h2{font-size:38px}
+ .contact-copy h1{font-size:clamp(44px,13vw,60px)}
+}
+
+@media(max-width:360px){
+ .wrap{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+ .brand-type{font-size:22px}.brand-mark{width:41px;height:41px}.menu-button{width:82px;min-width:82px}
+ .conversion-heading h2,.section-lead h2{font-size:32px}
+ .stripe-inner{padding-inline:8px}.stripe-inner span{font-size:8px}.stripe-inner i{font-size:10px}
+}
+
+@media(max-width:760px) and (max-height:500px){
+ .top-signal{display:none}.main-nav{max-height:calc(100dvh - 68px)}
+}
+
+@media(any-pointer:coarse){
+ .button,.text-link,.tab,.s4-action,.s4-example,.faq-list summary,.footer-links a,.footer-last a{min-height:48px}
+}
