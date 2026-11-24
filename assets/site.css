@@ -153,6 +153,7 @@ h1 em,h2 em{font-style:normal;color:var(--cyan)}
 .art-large .art-core>span{font-size:clamp(135px,22vw,260px)}
 .art-large .art-logo{max-width:37%;max-height:230px}
 .case-body{display:grid;grid-template-columns:1fr 1fr;gap:85px;padding-top:85px;padding-bottom:90px}
+.case-body>article{min-width:0}
 .case-body h2{margin:15px 0 25px;font-size:45px}
 .case-body p{max-width:510px;font-size:16px;line-height:1.7;color:#b5c5d7}
 .case-features{padding:0;margin:0;list-style:none}
@@ -191,7 +192,7 @@ h1 em,h2 em{font-style:normal;color:var(--cyan)}
 .portfolio-help{grid-template-columns:1fr;gap:14px}.portfolio-help .text-link{grid-column:1/-1}.page-intro h1{font-size:clamp(45px,12vw,64px)}.split-label{align-items:flex-start}.small-counter{text-align:right}
 .brief-panel{padding:19px}.brief-panel h2{font-size:30px}.brief-actions{grid-template-columns:1fr}
 .story-graphic{height:260px}.story-graphic>span{font-size:83px}.contact-copy h1{font-size:clamp(48px,12vw,70px)}.contact-page{gap:25px}
-.case-intro h1{font-size:clamp(50px,12vw,66px)}.case-desc{font-size:16px}.case-actions-band h2{font-size:34px}.next-case a{font-size:19px}
+.case-intro h1{font-size:clamp(50px,12vw,66px)}.case-desc{font-size:16px}.case-body h2{font-size:clamp(31px,11vw,39px);overflow-wrap:anywhere}.case-actions-band h2{font-size:34px}.next-case a{font-size:19px}
 .footer-main{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.footer-last{display:block}.footer-last span{display:block;margin-top:8px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.work-card:hover,.button:hover{transform:none}}
