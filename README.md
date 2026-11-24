@@ -19,6 +19,7 @@ Site estático sem acesso a pedidos, senhas ou banco de produção. Não reintro
 node --check assets/site.js
 node tests/site-smoke.mjs
 node tests/site-quality.mjs
+node tests/site-comprehensive.mjs
 node scripts/serve.mjs
 node scripts/audit-performance.mjs http://127.0.0.1:4173/
 node scripts/optimize-covers.mjs

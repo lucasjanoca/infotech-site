@@ -71,7 +71,7 @@ assert.match(home, /"@type": "FAQPage"/);
 
 const js = readFileSync(join(root, 'assets/site.js'), 'utf8');
 assert.match(js, /params\.get\('objetivo'\)/, 'O contato deve aceitar objetivo pré-selecionado.');
-assert.match(home, /site\.css\?v=10\.0\.0/);
+assert.match(home, /site\.css\?v=10\.0\.1/);
 assert.match(contact, /site\.js\?v=8\.1\.1/);
 
 console.log('Site smoke: OK');
