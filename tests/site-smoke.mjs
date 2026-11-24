@@ -24,7 +24,10 @@ assert.match(home, /class="case-proof-grid/);
 assert.match(home, /class="path-grid/);
 const styles = readFileSync(join(root, 'assets/site.css'), 'utf8');
 assert.match(styles, /"label label" "title title" "visual description"/, 'Os cards devem ter títulos acima da imagem e descrição lado a lado.');
-assert.doesNotMatch(styles, /\.path-grid>a\{display:block/, 'Os cards devem preservar a grade compacta no celular.');
+assert.match(styles, /grid-template-areas:"label" "title" "visual" "description"/, 'Em celulares estreitos, os cards devem empilhar imagem e descrição para facilitar a leitura.');
+assert.match(styles, /\.catalog-grid\{grid-template-columns:1fr/, 'A galeria deve usar uma coluna em celulares estreitos.');
+assert.match(styles, /\.menu-button::after\{content:"Menu"\}/, 'O menu mobile deve ter um rótulo visível.');
+assert.match(styles, /font-size:16px;min-height:52px/, 'Campos do formulário mobile devem evitar zoom automático e facilitar o toque.');
 assert.equal((home.match(/class="path-image"/g) || []).length, 4, 'As quatro opções devem exibir uma imagem coerente.');
 assert.match(home, /class="process-flow/);
 assert.match(home, /class="home-faq/);
@@ -68,7 +71,7 @@ assert.match(home, /"@type": "FAQPage"/);
 
 const js = readFileSync(join(root, 'assets/site.js'), 'utf8');
 assert.match(js, /params\.get\('objetivo'\)/, 'O contato deve aceitar objetivo pré-selecionado.');
-assert.match(home, /site\.css\?v=9\.5\.4/);
+assert.match(home, /site\.css\?v=10\.0\.0/);
 assert.match(contact, /site\.js\?v=8\.1\.1/);
 
 console.log('Site smoke: OK');
